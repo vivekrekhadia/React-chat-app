@@ -17,11 +17,10 @@ const getNewMessgae = (msg) => {
 const InputField = ({ addMsg }) => {
   // const messageEl = useRef(null);
   const [inputMessage, setinputMessage] = useState("");
-  const scrollToBottom = () => {};
+
   const handleSubmit = () => {
     addMsg(getNewMessgae(inputMessage));
     setinputMessage("");
-    scrollToBottom();
   };
   return (
     <div
