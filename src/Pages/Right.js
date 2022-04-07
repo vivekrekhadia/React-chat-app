@@ -51,7 +51,7 @@ const getChatValue = () => {
 };
 
 const Right = () => {
-  const [first, setfirst] = useState(getChatValue());
+  const [first, setfirst] = useState(chatObj);
 
   useEffect(() => {
     localStorage.setItem("chat", JSON.stringify(first));
